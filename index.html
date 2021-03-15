@@ -1,0 +1,658 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>पुरंदर पतपेढी</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet"
+        type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=PT+Sans:700' rel='stylesheet' type='text/css'>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="your_website_domain/css_root/flaticon.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            background: url(/red.jpeg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 100vh;
+            margin: auto;
+        }
+
+        /*CSS for a really simple responsive grid*/
+        body {
+            font-family: Open Sans;
+            color: #555555;
+        }
+
+        h1 {
+            font-size: 24px;
+            font-weight: normal;
+            margin: 0.4em 0;
+        }
+
+        .container {
+            /* width: 100%; */
+            margin: 0 auto;
+        }
+
+        .container .row {
+            float: left;
+            clear: both;
+            width: 100%;
+        }
+
+        .container .col {
+            /* float: left; */
+            margin: 0 0 1.2em;
+            padding-right: 1.2em;
+            padding-left: 1.2em;
+        }
+
+        .container .col.one,
+        .container .col.two,
+        .container .col.three,
+        .container .col.four,
+        .container .col.five,
+        .container .col.six,
+        .container .col.seven,
+        .container .col.eight,
+        .container .col.nine,
+        .container .col.ten,
+        .container .col.eleven,
+        .container .col.twelve {
+            width: 100%;
+        }
+
+
+        @media screen and (min-width: 767px) {
+            .container {
+                width: 100%;
+                max-width: 1080px;
+                margin: 0 auto;
+            }
+
+            .container .row {
+                width: 100%;
+                float: left;
+                clear: both;
+            }
+
+            .container .col {
+                float: left;
+                margin: 0 0 1em;
+                padding-right: .5em;
+                padding-left: .5em;
+            }
+
+            .container .col.one {
+                width: 8.33%;
+            }
+
+            .container .col.two {
+                width: 16.66%;
+            }
+
+            .container .col.three {
+                width: 24.99%;
+            }
+
+            .container .col.four {
+                width: 50%;
+            }
+
+            .container .col.five {
+                width: 41.65%;
+            }
+
+            .container .col.six {
+                width: 49.98%;
+            }
+
+            .container .col.seven {
+                width: 58.31%;
+            }
+
+            .container .col.eight {
+                width: 66.64%;
+            }
+
+            .container .col.nine {
+                width: 74.97%;
+            }
+
+            .container .col.ten {
+                width: 83.3%;
+            }
+
+            .container .col.eleven {
+                width: 91.65%;
+            }
+
+            .container .col.tweleve {
+                width: 100%;
+            }
+
+
+        }
+
+        @media (max-width: 1240px) {
+            .container .image_1 {
+                flex-direction: column;
+            }
+
+            .container .image_1 img {
+                width: 80%;
+            }
+        }
+
+        /*All the button styles*/
+
+        * {
+            -moz-box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        /********************
+    GENERIC BUTTON STYLES
+    ********************/
+        .btn {
+            font-size: 18px;
+            white-space: nowrap;
+            width: 100%;
+            padding: .8em 1.5em;
+            font-family: Open Sans, Helvetica, Arial, sans-serif;
+            line-height: 18px;
+            display: inline-block;
+            zoom: 1;
+            color: #fff;
+            text-align: center;
+            position: relative;
+            -webkit-transition: border .25s linear, color .25s linear, background-color .25s linear;
+            transition: border .25s linear, color .25s linear, background-color .25s linear;
+        }
+
+        /*SEA GREEN BUTTON STYLES*/
+        .btn.btn-sea {
+            background-color: #08bc9a;
+            border-color: #08bc9a;
+            -webkit-box-shadow: 0 3px 0 #088d74;
+            box-shadow: 0 3px 0 #088d74;
+        }
+
+        .btn.btn-sea:hover {
+            background-color: #01a183;
+        }
+
+        .btn.btn-sea:active {
+            top: 3px;
+            outline: none;
+            -webkit-box-shadow: none;
+            box-shadow: none;
+        }
+
+        /*DARK BLUE BUTTON STYLES*/
+        .btn.btn-dark-blue {
+            background-color: #003366;
+            border-color: #237fbc;
+            -webkit-box-shadow: 0 3px 0 #1a5c87;
+            box-shadow: 0 3px 0 #1a5c87;
+        }
+
+        .btn.btn-dark-blue:hover {
+            background-color: #166ea8;
+        }
+
+        .btn.btn-dark-blue:active {
+            top: 3px;
+            outline: none;
+            -webkit-box-shadow: none;
+            box-shadow: none;
+        }
+
+        /*RED/ROUGE BUTTON STYLES*/
+        .btn.btn-rouge {
+            background-color: #c0392b;
+            border-color: #c0392b;
+            -webkit-box-shadow: 0 3px 0 #8f2a1f;
+            box-shadow: 0 3px 0 #8f2a1f;
+        }
+
+        .btn.btn-rouge:hover {
+            background-color: #ac3420;
+        }
+
+        .btn.btn-rouge:active {
+            top: 3px;
+            outline: none;
+            -webkit-box-shadow: none;
+            box-shadow: none;
+        }
+
+        /*DARK BUTTON STYLES*/
+        .btn.btn-dark {
+            background-color: #2c3d51;
+            border-color: #2c3d51;
+            -webkit-box-shadow: 0 3px 0 #080c0f;
+            box-shadow: 0 3px 0 #080c0f;
+        }
+
+        .btn.btn-dark:hover {
+            background-color: #202d3d;
+        }
+
+        .btn.btn-dark:active {
+            top: 3px;
+            outline: none;
+            -webkit-box-shadow: none;
+            box-shadow: none;
+        }
+
+        /*DARK BUTTON STYLES*/
+        .btn.btn-orange {
+            background-color: #f59e00;
+            border-color: #f59e00;
+            -webkit-box-shadow: 0 3px 0 #b37401;
+            box-shadow: 0 3px 0 #b37401;
+        }
+
+        .btn.btn-orange:hover {
+            background-color: #dd9003;
+        }
+
+        .btn.btn-orange:active {
+            top: 3px;
+            outline: none;
+            -webkit-box-shadow: none;
+            box-shadow: none;
+        }
+
+        /*SUNFLOWER BUTTON STYLES*/
+        .btn.btn-sunflower {
+            background-color: #f2c500;
+            border-color: #f2c500;
+            -webkit-box-shadow: 0 3px 0 #b19001;
+            box-shadow: 0 3px 0 #b19001;
+        }
+
+        .btn.btn-sunflower:hover {
+            background-color: #e3ba02;
+        }
+
+        .btn.btn-sunflower:active {
+            top: 3px;
+            outline: none;
+            -webkit-box-shadow: none;
+            box-shadow: none;
+        }
+
+        /*RED BUTTON STYLES*/
+        .btn.btn-red {
+            background-color: #ea4f37;
+            border-color: #ea4f37;
+            -webkit-box-shadow: 0 3px 0 #b13825;
+            box-shadow: 0 3px 0 #b13825;
+        }
+
+        .btn.btn-red:hover {
+            background-color: #a53422;
+        }
+
+        .btn.btn-red:active {
+            top: 3px;
+            outline: none;
+            -webkit-box-shadow: none;
+            box-shadow: none;
+        }
+
+        /*CONCRETE BUTTON STYLES*/
+        .btn.btn-concrete {
+            background-color: #7e8c8d;
+            border-color: #7e8c8d;
+            -webkit-box-shadow: 0 3px 0 #4e5b5c;
+            box-shadow: 0 3px 0 #4e5b5c;
+        }
+
+        .btn.btn-concrete:hover {
+            background-color: #6a7879;
+        }
+
+        .btn.btn-concrete:active {
+            top: 3px;
+            outline: none;
+            -webkit-box-shadow: none;
+            box-shadow: none;
+        }
+
+        /********************
+    SOCIAL BUTTON STYLES
+    ********************/
+
+        /*FACEBOOK*/
+        .btn.btn-facebook {
+            background-color: #2479b6;
+            border-color: #2479b6;
+            -webkit-box-shadow: 0 3px 0 #1c6394;
+            box-shadow: 0 3px 0 #1c6394;
+        }
+
+        .btn.btn-facebook:active {
+            top: 3px;
+            outline: none;
+            -webkit-box-shadow: none;
+            box-shadow: none;
+        }
+
+        /*TWITTER*/
+        .btn.btn-twitter {
+            background-color: #2a91db;
+            border-color: #2a91db;
+            -webkit-box-shadow: 0 3px 0 #1d6ea7;
+            box-shadow: 0 3px 0 #1d6ea7;
+        }
+
+        .btn.btn-twitter:active {
+            top: 3px;
+            outline: none;
+            -webkit-box-shadow: none;
+            box-shadow: none;
+        }
+
+        /*GOOGLE PLUS*/
+        .btn.btn-google-plus {
+            background-color: #be3b26;
+            border-color: #be3b26;
+            -webkit-box-shadow: 0 3px 0 #842719;
+            box-shadow: 0 3px 0 #842719;
+        }
+
+        .btn.btn-google-plus:active {
+            top: 3px;
+            outline: none;
+            -webkit-box-shadow: none;
+            box-shadow: none;
+        }
+
+        /*DRIBBBLE*/
+        .btn.btn-dribbble {
+            background-color: #f62d7e;
+            border-color: #f62d7e;
+            -webkit-box-shadow: 0 3px 0 #d3235a;
+            box-shadow: 0 3px 0 #d3235a;
+        }
+
+        .btn.btn-dribbble:active {
+            top: 3px;
+            outline: none;
+            -webkit-box-shadow: none;
+            box-shadow: none;
+        }
+
+        /*YOU TUBE*/
+        .btn.btn-you-tube {
+            background-color: #cf3728;
+            border-color: #cf3728;
+            -webkit-box-shadow: 0 3px 0 #9a1e1a;
+            box-shadow: 0 3px 0 #9a1e1a;
+        }
+
+        .btn.btn-you-tube:active {
+            top: 3px;
+            outline: none;
+            -webkit-box-shadow: none;
+            box-shadow: none;
+        }
+
+        /*LinkedIn*/
+        .btn.btn-linkedin {
+            background-color: #0074ba;
+            border-color: #0074ba;
+            -webkit-box-shadow: 0 3px 0 #00497b;
+            box-shadow: 0 3px 0 #00497b;
+        }
+
+        .btn.btn-linkedin:active {
+            top: 3px;
+            outline: none;
+            -webkit-box-shadow: none;
+            box-shadow: none;
+        }
+
+        /*Dropbox*/
+        .btn.btn-dropbox {
+            background-color: #0083e4;
+            border-color: #0083e4;
+            -webkit-box-shadow: 0 3px 0 #015593;
+            box-shadow: 0 3px 0 #015593;
+        }
+
+        .btn.btn-dropbox:active {
+            top: 3px;
+            outline: none;
+            -webkit-box-shadow: none;
+            box-shadow: none;
+        }
+
+        /*Wordpress*/
+        .btn.btn-wordpress {
+            background-color: #1d7794;
+            border-color: #1d7794;
+            -webkit-box-shadow: 0 3px 0 #114657;
+            box-shadow: 0 3px 0 #114657;
+        }
+
+        .btn.btn-wordpress:active {
+            top: 3px;
+            outline: none;
+            -webkit-box-shadow: none;
+            box-shadow: none;
+        }
+
+        /*Pinterest*/
+        .btn.btn-pinterest {
+            background-color: #c8232a;
+            border-color: #c8232a;
+            -webkit-box-shadow: 0 3px 0 #89171b;
+            box-shadow: 0 3px 0 #89171b;
+        }
+
+        .btn.btn-pinterest:active {
+            top: 3px;
+            outline: none;
+            -webkit-box-shadow: none;
+            box-shadow: none;
+        }
+
+        /*Skype*/
+        .btn.btn-skype {
+            background-color: #2eabde;
+            border-color: #2eabde;
+            -webkit-box-shadow: 0 3px 0 #1b6684;
+            box-shadow: 0 3px 0 #1b6684;
+        }
+
+        .btn.btn-skype:active {
+            top: 3px;
+            outline: none;
+            -webkit-box-shadow: none;
+            box-shadow: none;
+        }
+
+        /*Instagram*/
+        .btn.btn-instagram {
+            background-color: #5182aa;
+            border-color: #5182aa;
+            -webkit-box-shadow: 0 3px 0 #1f415d;
+            box-shadow: 0 3px 0 #1f415d;
+        }
+
+        .btn.btn-instagram:active {
+            top: 3px;
+            outline: none;
+            -webkit-box-shadow: none;
+            box-shadow: none;
+        }
+
+        /*RSS*/
+        .btn.btn-rss {
+            background-color: #f8a933;
+            border-color: #f8a933;
+            -webkit-box-shadow: 0 3px 0 #ab7422;
+            box-shadow: 0 3px 0 #ab7422;
+        }
+
+        .btn.btn-rss:active {
+            top: 3px;
+            outline: none;
+            -webkit-box-shadow: none;
+            box-shadow: none;
+        }
+
+        /**********
+    Icon styles
+    **********/
+        .btn i {
+            padding-right: 0.8em;
+            line-height: 22px;
+        }
+
+        .icon-only {
+            padding: 1em;
+        }
+
+        .icon-only i {
+            padding-right: 0;
+            font-size: 22px;
+            line-height: 22px;
+        }
+
+
+        .container {
+            align: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- ***************************
+        ****************************
+        TO GET STARTED, SIMPLY COPY THE  
+        <a href="" class="btn btn-sunflower">Click Here!</a> 
+        AND LINK THE button-styles.css TO YOUR HTML PAGE. 
+        IF YOU PLAN TO USE THE ICONS & FONT (OPEN SANS) YOU'LL
+        ALSO NEED TO LINK TO THAT AS SHOWN IN THE HEAD SECTION ABOVE
+        ****************************
+        ****************************
+    -->
+
+    <div class="container-fluid">
+        <div class="row header">
+            <div class="col three">
+                <div class="logo_div">
+                    <img class="logo" src="/Logo.jpeg" />
+                    <div>
+                        <h3 style="color:#cf2929;;font-size:50px;font-family:Century Gothic;font-weight:bold;">पुरंदर
+                            तालुका
+                        </h3>
+                        <p style="color:#003366;font-size:25px;font-family:Century Gothic;font-weight:bold;">नागरी सहकरी
+                            पतपेढी मर्यादित, मुंबई
+                        </p>
+                    </div>
+                </div>
+
+                <!-- <center>
+                    <img class="logo" src="Images/Logo.jpeg" />
+                    <p style="color:#cf2929;;font-size:50px;font-family:Century Gothic;font-weight:bold;">पुरंदर तालुका
+                    </p>
+                    <p style="color:#003366;font-size:25px;font-family:Century Gothic;font-weight:bold;">नागरी सहकरी
+                        पतपेढी मर्यादित, मुंबई
+                    </p>
+                </center> -->
+            </div>
+        </div>
+        <div class="container">
+            <br />
+            <div class="row">
+
+                <div class="col three">
+                    <center style="padding-top: 20px;">
+                        <p
+                            style="font-family: 'Montserrat', sans-serif;color:rgb(0, 0, 0);font-weight:bold;font-size:3.8rem;">
+                            Virtual
+                            Meeting</p>
+                    </center>
+                </div>
+            </div>
+
+            <div class="row">
+                <br /><br />
+
+                <div class="col two">
+                    <a href="sample.pdf" class="btn btn-red"><i class="glyphicon glyphicon-user"></i> Meeting
+                        Notice</a>
+                </div>
+
+                <div class="col three">
+                    <a href="sample.pdf" class="btn btn-sea"><i class="glyphicon glyphicon-file"></i>
+                        Annual Report</a>
+                </div>
+
+                <div class="col two">
+                    <a href="https://meet.google.com/pev-oqup-mru" class="btn btn-dark-blue"><i
+                            class="glyphicon glyphicon-play-circle"></i> Video Conference
+                        Link</a>
+                </div>
+            </div>
+
+            <div class="image_1">
+
+                <img src="/New1.jpeg" />
+                <img src="/New2.jpeg" />
+
+            </div>
+
+            <div class="row">
+                <div class="col three ">
+                    <!-- <div class="footer">
+                        <h5>Designed & Developed By
+                        </h5>
+                        <span>THE QUADIOTS</span>
+                    </div> -->
+                    <p style="
+                        padding:10px;font-style: Century Gothic;font-weight:bold;font-size:22px;">
+                        <center>Designed & Developed By<br />
+                            <span
+                                style="font-weight:bold;color:#000000;text-shadow: -1px -1px 0 rgb(255, 255, 255), 1px -1px 0 rgb(255, 255, 255), -1px 1px 0 rgb(255, 255, 255), 1px 1px 0 rgb(255, 255, 255);font-size:25px;">THE
+                                QUADIOTS</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+
+
+</body>
+
+</html>
+
+<!-- <div class="col two">
+                <a href="#" class="btn btn-sea"><i class="glyphicon glyphicon-file"></i> Annual Report</a>						
+            </div>  -->
